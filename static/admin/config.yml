@@ -12,6 +12,14 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Publicado em", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false}
+      - {label: "Descrição", name: "body", widget: "markdown"}
+  # - name: "about"
+  #   label: "Sobre"
+  #   folder: "content/about"
+  #   create: true
+  #   fields:
+  #     - {label: "Sobre", name: "about", widget: "hidden", default: "about"}
+  #     - {label: "Nome", name: "title", widget: "string"}
+  #     - {label: "Descrição", name: "body", widget: "markdown"}
